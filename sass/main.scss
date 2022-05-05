@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+
+
+.navbar{
+    background: url(../image/navbar_background.png);
+    position: absolute;
+    height: 663px;
+    width: 100%;
+    background-size: cover;
+    a{
+        text-decoration: none;
+    }
+    .logo{
+        position: absolute;
+        width: 190px;
+        margin-top: 80px;
+        margin-left: 7%;
+    }
+    .Products{
+        color: #4B4B4B;
+        margin-left: 50%;
+        margin-top: 93px;
+    }
+    .Products:hover{
+        color: #FFAD4C;
+        transition: .2s;
+    }
+    .Products:active{
+        cursor: pointer;
+        color: #FFAD4C;
+        transition-duration: .2s;
+    }
+    .About{
+        color: #4B4B4B;
+        margin-left: 70%;
+        margin-top: -26px;
+    }
+    .About:hover{
+        color: #FFAD4C;
+        transition: .2s;
+    }
+    .About:active{
+        color: #FFAD4C;
+        transition: .2s;
+    }
+    .Furniture{
+        position: absolute;
+        left: 53%;
+        color: #4B4B4B;
+        top: 10%;
+    }
+    .Furniture:hover{
+        color: #FFAD4C;
+        transition: .2s;
+    }
+    .Contact{
+        color: #4B4B4B;
+        margin-left: 80%;
+        margin-top: -28px;
+    }
+    .Contact:hover{
+        color: #FFAD4C;
+        transition: .2s;
+    }
+    .Contact:active{
+        color: #FFAD4C;
+        transition-duration: .2s;            
+    }
+    h1{
+        color: #4B4B4B;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 74px;
+        letter-spacing: 0.01em;
+        text-transform: capitalize;
+        margin-top: 7%;
+        margin-left: 7%;
+    }
+    p{
+        color: #4B4B4B;
+        opacity: 0.7;
+        margin-left: 7%;
+        margin-top: 2%;
+        font-size: 24px;
+    }
+    button{
+        padding: 12px 23px;
+        background: #FFAD4C;
+        backdrop-filter: blur(4px);
+        color: #fff;
+        border: none;
+        border-radius: 6px;
+        margin-left: 7%;
+        margin-top: 5%;
+    }
+    button:hover{
+        cursor: pointer;
+        
+    }
+    button:active{
+        box-shadow: 0 0 10px 5px #FFAD4C;
+    }
+}
+
+.product_section{
+    position: absolute;
+    .Products{
+        left: 7%;
+        top: 5000%;
+        position: absolute;
+    }
+}
+
+@media(max-width: 600px){
+    .container{
+        width: 100%;
+    }
+    .navbar{
+        width: 100%;
+        a{
+            display: none;
+        }
+        .logo{
+            position: absolute;
+            left: 20%;
+            top: -5%;
+        }
+        h1{
+            position: absolute;
+            top: 15%;
+            text-align: center;
+            font-size: 45px;
+            line-height: 50px;
+        }
+        p{
+            position: absolute;
+            top: 45%;
+            text-align: center;
+        }
+        button{
+            position: absolute;
+            top: 75%;
+            left: 25%;
+        }
+    }
+}
